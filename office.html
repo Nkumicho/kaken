@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&subset=latin-ext" rel="stylesheet"/>
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" type='text/css' media='all' href="./css/webslides.css"/>
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type='text/css' media='all' href="./css/svg-icons.css"/>
+    <link rel="stylesheet" type='text/css' media='all' href="./css/office.css"/>
+    <link rel="stylesheet" type='text/css' media='all' href="./css/menu.css"/>
+
+    <link rel="shortcut icon" sizes="16x16" href="images/favicons/favicon.png">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+<div class="header">
+  <div class="hamburger-menu" id="page-1">
+    <div class="hamburger-menu-line line-top"></div>
+    <div class="hamburger-menu-line line-bottom"></div>
+
+    <div class="menu-background"></div>
+
+    <div class="content">
+      <ul>
+        <li>はじめに</li>
+        <li>オフィスレイアウト</li>
+        <li>公共施設設計</li>
+        <li>考察</li>
+      </ul>
+    </div>
+    <!--id="nav-opener" for="nav-input"<input type="checkbox" id="nav-input" class="nav-state">
+    <label class="nav-background" id="nav-closer" for="nav-input"></label>
+
+    <div id="nav-content">
+      <ul>
+        <li>メニュー1</li>
+        <li>メニュー2</li>
+        <li>メニュー3</li>
+      </ul>
+    </div>-->
+  </div>
+
+</div>
+<div class="footer">
+
+</div>
+
+
+
+    <article id="webslides">
+
+    <section class="fullscreen slide-top slide current bg-apple ">
+      <div class="embed">
+        <video  loop muted poster="https://webslides.tv/static/images/peggy.jpg"src="https://webslides.tv/static/videos/peggy.mp4" autoplay poster="posterimage.jpg">
+
+        </video>
+        <h1 class="fadeIn">これからのオフィスレイアウトと</h1>
+        <h1 class="fadeIn">それに伴う新しい公共施設の提案</h1>
+        <h2 class="fadeIn slow">建設工学科３年　２４番　平川祐意</h2>
+      </div>
+    </section>
+
+    <section class="fullscreen slide-top slide current bg-apple ">
+      <div class="f">
+
+
+      <div class="wrap">
+        <div class="card-50">
+          <figure>
+            <img src="https://source.unsplash.com/ALtNa-uKy3M/" alt="Mobile Screenshot">
+          </figure>
+          <div class="flex-content">
+            <h3>研究の動機・目的</h3>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+
+                <!--<div class="bg"></div>-->
+      </div>
+          </div>
+    </section>
+
+      <section class="slide-top slide current bg-apple">
+        <div class="wrap">
+          <a href="reiaut.html"><div class ="ali">
+            <h4>オフィスレイアウト</h4></div></a>
+          <div class="rai"><p>今までのオフィスレイアウトを見直し、変化していく働き方に対応したこれからのオフィスレイアウトを理解することでこれから働く環境に何が求められているのかを知ることを目的としています。</p></div>
+        </div>
+      </section>
+
+      <section class="slide-top slide current bg-apple">
+        <div class="log">
+
+
+        <div class="wrap">
+        <h1 class="aligncenter">ワークスペースと公共施設の融合</h1>
+          <div class="text-cols">
+            <p>新しく変わってきた働き方に対応できる施設とはどのようなものか、テレワークなど職場以外での働き方に適応した新しい公共施設を提案します。それにより働く人々のトラブルの予防、我々学生の学習スペースの確保することを目的としています。</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+          </div>
+      </section>
+    </article>
+
+    <!-- Required -->
+    <script src="./js/webslides.js"></script>
+    <script>
+      window.ws = new WebSlides();
+      console.log(ws);
+    　window.ws.el.addEventListener('ws:slide-change',(e)=>{
+      console.log(e.detail);
+      const div = document.getElementById("page-1");
+      e.detail.currentSlide===2?
+      div.classList.add("change"):
+      div.classList.remove("change");
+    });
+    </script>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="./js/svg-icons.js"></script>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>
